@@ -12,31 +12,32 @@
     android:gravity="center">
 
     <TextView
+        android:id="@+id/txtAppGreetings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="28sp"
-        android:text="Welcome to Quizzes and Games"
+        android:text="Welcome to Quiz and Game"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/txtAppInfo"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:text="True or False questions about basketball"
         android:layout_marginBottom="40dp"/>
 
     <Button
-        android:id="@+id/btnMainQuiz"
+        android:id="@+id/btnQuiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:insetLeft="60dp"
         android:insetRight="60dp"
         android:backgroundTint="#616DF4"
-        android:text="Take The Main Quiz"
+        android:text="Basketball Quiz"
         android:layout_marginBottom="5dp"/>
 
-    <Button
-        android:id="@+id/btnQuizzes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:insetLeft="60dp"
-        android:insetRight="60dp"
-        android:backgroundTint="#616DF4"
-        android:text="Quiz Selection"
-        android:layout_marginBottom="5dp"/>
 
     <Button
         android:id="@+id/btnGame"
@@ -57,6 +58,7 @@
         android:backgroundTint="#616DF4"
         android:text="Exit"
         android:layout_marginBottom="5dp"/>
+
 
 
 

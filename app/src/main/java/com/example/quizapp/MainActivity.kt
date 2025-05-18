@@ -1,6 +1,8 @@
 package com.example.quizapp
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+//Toast.makeText(this, "Please enter a time period of a day.", Toast.LENGTH_LONG).show()//
+        val txtAppGreetings = findViewById<TextView>(R.id.txtAppGreetings)
+        val txtAppDescription = findViewById<TextView>(R.id.txtAppInfo)
+        val btnMainQuiz = findViewById<Button>(R.id.btnQuiz)
+        //val btnQuizzes = findViewById<Button>(R.id.btnQuizzes)
+        val btnGame = findViewById<Button>(R.id.btnGame)
+        val btnExit = findViewById<Button>(R.id.btnExit)
+
+
+        txtAppGreetings.text="Welcome to Quizzes and Game"
+        txtAppDescription.text="True or False questions about basketball"
+
+
+
+
+
+
+
+
     }
 }

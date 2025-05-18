@@ -13,33 +13,34 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:layout_marginBottom="20dp"
+
+        android:layout_marginTop="30dp"
         android:textSize="32sp"
         android:translationY="-168dp"
         android:text="Welcome to The Main Quiz" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtQuestions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:hint="Quiz Questions"
         android:textSize="30sp"
         android:translationY="-100dp"
         android:text="" />
 
-    <Button
-        android:id="@+id/btnFalse"
+    <TextView
+        android:id="@+id/txtFeedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#DD0404"
-        android:insetLeft="110dp"
-        android:insetRight="110dp"
-        android:layout_marginBottom="20dp"
-        android:text="False" />
+
+        android:hint="Quiz Questions"
+        android:textSize="30sp"
+        android:translationY="-100dp"
+        android:text="" />
 
     <Button
         android:id="@+id/btnTrue"
@@ -50,6 +51,16 @@
         android:insetRight="110dp"
         android:layout_marginBottom="20dp"
         android:text="True" />
+
+    <Button
+        android:id="@+id/btnFalse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DD0404"
+        android:insetLeft="110dp"
+        android:insetRight="110dp"
+        android:layout_marginBottom="20dp"
+        android:text="False" />
 
     <Button
         android:id="@+id/btnNext"
