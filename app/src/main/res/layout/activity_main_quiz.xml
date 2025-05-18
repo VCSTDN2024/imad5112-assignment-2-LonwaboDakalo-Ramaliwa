@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainQuiz"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background=""
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="32sp"
+        android:translationY="-168dp"
+        android:text="Welcome to The Main Quiz" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Quiz Questions"
+        android:textSize="30sp"
+        android:translationY="-100dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnFalse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DD0404"
+        android:insetLeft="110dp"
+        android:insetRight="110dp"
+        android:layout_marginBottom="20dp"
+        android:text="False" />
+
+    <Button
+        android:id="@+id/btnTrue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4FA52C"
+        android:insetLeft="110dp"
+        android:insetRight="110dp"
+        android:layout_marginBottom="20dp"
+        android:text="True" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#71a6d2"
+        android:insetLeft="110dp"
+        android:insetRight="110dp"
+        android:layout_marginBottom="20dp"
+        android:text="Next" />
+
+
+
+</LinearLayout>
