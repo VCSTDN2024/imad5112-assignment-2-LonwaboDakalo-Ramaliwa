@@ -29,9 +29,9 @@ class MainScore : AppCompatActivity() {
 
 
         val score = intent.getIntExtra("Score", 0)
-        txtScore.text = "Your Score: $score/5"
+        txtScore.text = "Your Score: $score/20"
 
-        val feedback = if (score >= 3) {
+        val feedback = if (score >= 12) {
             "Well Done!"
         } else {
             "Nice Effort!"
