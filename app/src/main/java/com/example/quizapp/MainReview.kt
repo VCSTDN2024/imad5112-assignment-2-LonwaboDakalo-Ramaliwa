@@ -15,26 +15,27 @@ class MainReview : AppCompatActivity() {
     private lateinit var txtReview: TextView
     private lateinit var btnRestart: Button
     private lateinit var btnExit: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
 
-        val txtReview = findViewById<TextView>(txtReview)
-        val btnRestart = findViewById<Button>(btnRestart)
-        val btnExit = findViewById<Button>(btnExit)
+        val txtReview = findViewById<TextView>(R.id.txtReview)
+        val btnRestart = findViewById<Button>(R.id.btnRestart)
+        val btnExit = findViewById<Button>(R.id.btnExit)
 
 
         val questions = intent.getStringArrayExtra("questions")
-        val answers = intent.getStringArrayExtra("answers")
+        val answers = intent.getBooleanArrayExtra("answers")
 
-        val txtReview = StringBuilder()
+        val reviewText = StringBuilder()
         if (questions != null && answers != null && questions.size ==answers.size){
             for (i in questions.indices){
                 txtReview.append("${i+1}.${questions[1]}\n")
                 txtReview.append("      Answer: ${if (answers[1]) "True" else "False"}\n\n")
             }
-            txtReview.text = txtReview.toString()
+            txtReview.text = reviewText.toString()
         } else{
             txtReview.text = "Error loading your review data."
         }

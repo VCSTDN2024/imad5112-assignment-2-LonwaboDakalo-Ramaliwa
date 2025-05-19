@@ -8,7 +8,6 @@
     tools:context=".MainQuiz"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background=""
     android:gravity="center">
 
     <TextView

@@ -87,7 +87,7 @@ class MainQuiz : AppCompatActivity() {
             txtFeedback.setTextColor(Color.GREEN)
             score++
         } else {
-            txtFeedback.text = "Inorrect!"
+            txtFeedback.text = "Incorrect!"
             txtFeedback.setTextColor(Color.RED)
         }
         btnTrue.isEnabled = false

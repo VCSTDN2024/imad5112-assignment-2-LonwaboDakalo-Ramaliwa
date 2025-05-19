@@ -8,25 +8,33 @@
     tools:context=".MainScore"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background=""
     android:gravity="center">
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtScore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text=""
+        android:hint="Display Score"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:text=""
         android:hint="Display Score"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnReview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Review Questions" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnExit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Exit" />
