@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
+    android:background="#808080"
     android:layout_gravity="center"
     android:gravity="center">
 
@@ -15,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="28sp"
+        android:textColor="#ffffff"
         android:text="Welcome to Quiz and Game"
         android:layout_marginBottom="20dp"/>
 
@@ -24,6 +26,7 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textAlignment="center"
+        android:textColor="#ffffff"
         android:text="True or False questions about basketball"
         android:layout_marginBottom="40dp"/>
 

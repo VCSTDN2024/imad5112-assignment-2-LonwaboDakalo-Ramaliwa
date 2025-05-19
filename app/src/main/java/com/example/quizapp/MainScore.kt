@@ -22,13 +22,13 @@ class MainScore : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_score)
 
-        val txtScore = findViewById<TextView>(txtScore)
-        val txtResult = findViewById<TextView>(txtResult)
-        val btnReview = findViewById<Button>(btnReview)
-        val btnExit = findViewById<Button>(btnExit)
+        val txtScore = findViewById<TextView>(R.id.txtScore)
+        val txtResult = findViewById<TextView>(R.id.txtResult)
+        val btnReview = findViewById<Button>(R.id.btnReview)
+        val btnExit = findViewById<Button>(R.id.btnExit)
 
 
-        val score = intent.getIntExtra("Score", 0)
+        val score = intent.getIntExtra("score", 0)
         txtScore.text = "Your Score: $score/20"
 
         val feedback = if (score >= 12) {
@@ -55,8 +55,8 @@ class MainScore : AppCompatActivity() {
 
     }
 
-    private fun <T> findViewById(txtScore: T): T {
+    // private fun <T> findViewById(txtScore: T): T {
 
-        return TODO("Provide the return value")
-    }
+       // return TODO("Provide the return value")
+    //}
 }

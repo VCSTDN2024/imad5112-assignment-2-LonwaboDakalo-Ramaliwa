@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="50dp"
+    android:background="#808080"
     tools:context=".MainReview">
 
     <ScrollView
@@ -19,7 +19,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#808080">
 
             <TextView
                 android:id="@+id/txtReview"
@@ -27,6 +28,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:text=""
+                android:textSize="25sp"
+                android:textColor="#ffffff"
                 android:hint="Display Score"/>
 
             <Button
@@ -38,6 +41,15 @@
                 android:insetLeft="60dp"
                 android:insetRight="60dp"
                 android:text="Restart" />
+
+            <Button
+                android:id="@+id/btnGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:insetLeft="60dp"
+                android:insetRight="60dp"
+                android:text="Study Break" />
 
             <Button
                 android:id="@+id/btnExit"

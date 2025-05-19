@@ -72,7 +72,7 @@ class MainQuiz : AppCompatActivity() {
 
         btnNext.setOnClickListener{
         currentQuestionIndex++
-        if (currentQuestionIndex < questions.size){
+        if (currentQuestionIndex < questions.size) {
             displayQuestion()
             txtFeedback.text = ""
             btnTrue.isEnabled = true
