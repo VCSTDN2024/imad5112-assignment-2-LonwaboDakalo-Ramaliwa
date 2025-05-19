@@ -32,10 +32,10 @@ class MainReview : AppCompatActivity() {
         val answers = intent.getBooleanArrayExtra("answers")
 
         val reviewText = StringBuilder()
-        if (questions != null && answers != null && questions.size ==answers.size){
-            for (i in questions.indices){
-                txtReview.append("${i+1}.${questions[1]}\n")
-                txtReview.append("      Answer: ${if (answers[1]) "True" else "False"}\n\n")
+        if (questions != null && answers != null && questions.size == answers.size) {
+            for (i in questions.indices) {
+                reviewText.append("${i+1}. ${questions[i]}\n")
+                reviewText.append("      Answer: ${if (answers[i]) "True" else "False"}\n\n")
             }
             txtReview.text = reviewText.toString()
         } else{
