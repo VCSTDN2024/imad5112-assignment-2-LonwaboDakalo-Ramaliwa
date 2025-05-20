@@ -8,51 +8,78 @@
     tools:context=".Studybreak"
     android:background="#808080"
     android:orientation="vertical"
-    android:layout_gravity="center"
+    android:padding="16dp"
     android:gravity="center">
 
     <TextView
-        android:id="@+id/txtInput"
-        android:layout_width="match_parent"
+        android:id="@+id/GuessTxt"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Guess the Number"
+        android:textSize="30sp"
         android:textColor="#ffffff"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/guessNumber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:text=""
-        android:textAlignment="center"
-        android:hint="Enter Number (0 to 100)"/>
+        android:hint="Enter a number from 1 - 100"
+        android:textColor="#ffffff"
+        android:inputType="number"
+        android:paddingBottom="16dp"
+        android:textAlignment="center"/>
 
     <TextView
-        android:id="@+id/txtResult"
+        android:id="@+id/outputTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:hint="Results"
         android:textAlignment="center"
-        android:hint="Results"/>
+        android:paddingBottom="16dp"/>
 
     <Button
-        android:id="@+id/btnGuess"
+        android:id="@+id/guessBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#616DF4"
         android:insetLeft="60dp"
         android:insetRight="60dp"
-        android:text="Guess" />
+        android:backgroundTint="#616DF4"
+        android:text="Guess"
+        android:layout_marginTop="2dp"/>
+
+
 
     <Button
-        android:id="@+id/btnClear"
+        android:id="@+id/clearBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#616DF4"
+        android:text="Clear"
         android:insetLeft="60dp"
         android:insetRight="60dp"
-        android:text="Clear" />
+        android:backgroundTint="#616DF4"
+        android:layout_marginTop="2dp"/>
 
     <Button
-        android:id="@+id/btnExit"
+        android:id="@+id/returnBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#616DF4"
+        android:text="Return to Home Page"
         android:insetLeft="60dp"
         android:insetRight="60dp"
-        android:text="Exit" />
+        android:backgroundTint="#616DF4"
+        android:layout_marginTop="2dp"/>
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:insetLeft="60dp"
+        android:insetRight="60dp"
+        android:backgroundTint="#616DF4"
+        android:layout_marginTop="2dp"/>
 </LinearLayout>

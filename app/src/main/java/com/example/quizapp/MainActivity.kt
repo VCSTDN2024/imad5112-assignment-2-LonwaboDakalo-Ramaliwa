@@ -39,6 +39,8 @@ class MainActivity : AppCompatActivity() {
 
         btnStudyBreak.setOnClickListener{
             val intent = Intent(this, Studybreak::class.java)
+            startActivity(intent)
+            Toast.makeText(this, "Welcome to Guess The Number!", Toast.LENGTH_LONG).show()
         }
 
         btnExit.setOnClickListener {
