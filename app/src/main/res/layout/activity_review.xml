@@ -30,7 +30,7 @@
                 android:hint="Display Score"
                 android:textColor="#ffffff"
                 android:text=""
-                android:textSize="12dp"
+                android:textSize="8dp"
                 tools:ignore="TextSizeCheck" />
 
             <Button
@@ -43,6 +43,15 @@
                 android:backgroundTint="#616DF4"
                 android:text="Restart" />
 
+            <Button
+                android:id="@+id/btnStudyBreak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetLeft="60dp"
+                android:insetRight="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="#616DF4"
+                android:text="Study Break" />
             <Button
                 android:id="@+id/exit_button"
                 android:layout_width="match_parent"

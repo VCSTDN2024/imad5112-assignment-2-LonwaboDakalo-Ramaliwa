@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val txtAppDescription = findViewById<TextView>(R.id.txtAppInfo)
         val btnQuiz = findViewById<Button>(R.id.btnQuiz)
         //val btnQuizzes = findViewById<Button>(R.id.btnQuizzes)
-        val btnGame = findViewById<Button>(R.id.btnGame)
+        val btnStudyBreak = findViewById<Button>(R.id.btnStudyBreak)
         val btnExit = findViewById<Button>(R.id.btnExit)
 
 
@@ -29,16 +29,16 @@ class MainActivity : AppCompatActivity() {
         txtAppDescription.text="True or False questions about basketball"
 
 
-        btnGame.setOnClickListener{
-            val intent = Intent( this, GuessGame::class.java) //Takes to study game: Guess the number
-            startActivity(intent)
 
-        }
 
         btnQuiz.setOnClickListener{
             val intent = Intent( this, MainQuiz::class.java) //Takes to quiz: Basketball Quiz
             startActivity(intent)
             Toast.makeText(this, "Once you start the quiz you cannot exit until it is completed.", Toast.LENGTH_LONG).show()//
+        }
+
+        btnStudyBreak.setOnClickListener{
+            val intent = Intent(this, Studybreak::class.java)
         }
 
         btnExit.setOnClickListener {

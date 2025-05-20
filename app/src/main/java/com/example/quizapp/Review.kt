@@ -11,11 +11,6 @@ import androidx.core.view.WindowInsetsCompat
 import kotlin.system.exitProcess
 
 class Review : AppCompatActivity() {
-    private lateinit var review_text_view: TextView
-    //private lateinit var btnGame: Button
-    private lateinit var btnRestart: Button
-    private lateinit var btnExit: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23,6 +18,7 @@ class Review : AppCompatActivity() {
 
 
         val reviewTextView = findViewById<TextView>(R.id.review_text_view)
+        val btnStudyBreak = findViewById<Button>(R.id.btnStudyBreak)
         val restartBtn = findViewById<Button>(R.id.restart_button)
         val exitBtn = findViewById<Button>(R.id.exit_button)
 
@@ -51,6 +47,10 @@ class Review : AppCompatActivity() {
             exitProcess(0)
         }
 
+        btnStudyBreak.setOnClickListener{
+            val intent = Intent( this, Studybreak::class.java) //Takes to study game: Guess the number
+            startActivity(intent)
 
+        }
     }
 }
