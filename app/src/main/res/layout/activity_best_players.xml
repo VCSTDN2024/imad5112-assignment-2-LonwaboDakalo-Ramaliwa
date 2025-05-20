@@ -5,94 +5,95 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Studybreak"
+    tools:context=".BestPlayers"
     android:background="#808080"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:layout_gravity="center"
     android:gravity="center">
 
+
     <TextView
-        android:id="@+id/GuessTxt"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Guess the Number"
+        android:layout_height="80dp"
         android:textSize="30sp"
+        android:layout_marginBottom="20dp"
         android:textColor="#ffffff"
-        android:paddingBottom="10dp"/>
+        android:text="2025's Best 10 NBA Players" />
 
     <EditText
-        android:id="@+id/guessNumber"
+        android:id="@+id/playerRank"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text=""
-        android:hint="Enter a number from 1 - 100"
-        android:textColor="#ffffff"
+        android:layout_height="68dp"
         android:inputType="number"
-        android:paddingBottom="16dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:hint="Enter a number" />
+
+    <Button
+        android:id="@+id/btnRank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:insetLeft="60dp"
+        android:insetRight="60dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#616DF4"
+        android:text="Find Player" />
+
+    <Button
+        android:id="@+id/btnClr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:insetLeft="60dp"
+        android:insetRight="60dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#616DF4"
+        android:text="Clear" />
+
 
     <TextView
-        android:id="@+id/outputTxt"
+        android:id="@+id/txtResults"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"
         android:textColor="#ffffff"
-        android:hint="Results"
+        android:text="The Player at this rank is:" />
+
+    <TextView
+        android:id="@+id/dispPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
         android:textAlignment="center"
-        android:paddingBottom="16dp"/>
+        android:hint="Results"
+        android:textColor="#ffffff"
+        android:text="" />
 
     <Button
-        android:id="@+id/guessBtn"
+        android:id="@+id/btnHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:insetLeft="60dp"
         android:insetRight="60dp"
+        android:layout_marginTop="2dp"
         android:backgroundTint="#616DF4"
-        android:text="Guess"
-        android:layout_marginTop="2dp"/>
-
+        android:text="Return To home" />
 
 
     <Button
-        android:id="@+id/clearBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Clear"
-        android:insetLeft="60dp"
-        android:insetRight="60dp"
-        android:backgroundTint="#616DF4"
-        android:layout_marginTop="2dp"/>
-
-    <Button
-        android:id="@+id/returnBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Return to Home Page"
-        android:insetLeft="60dp"
-        android:insetRight="60dp"
-        android:backgroundTint="#616DF4"
-        android:layout_marginTop="2dp"/>
-
-    <Button
-        android:id="@+id/btnPlayers"
+        android:id="@+id/btnExit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:insetLeft="60dp"
         android:insetRight="60dp"
+        android:layout_marginTop="2dp"
         android:backgroundTint="#616DF4"
-        android:text="Player Rankings"
-        android:layout_marginTop="2dp"/>
-
-    <Button
-        android:id="@+id/exitBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Exit"
-        android:insetLeft="60dp"
-        android:insetRight="60dp"
-        android:backgroundTint="#616DF4"
-        android:layout_marginTop="2dp"/>
+        android:text="Exit" />
 
 
 </LinearLayout>

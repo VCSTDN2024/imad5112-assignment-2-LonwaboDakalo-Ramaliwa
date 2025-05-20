@@ -32,6 +32,7 @@ class Studybreak : AppCompatActivity() {
         val guessBtn = findViewById<Button>(R.id.guessBtn)
         val clearBtn = findViewById<Button>(R.id.clearBtn)
         val returnBtn = findViewById<Button>(R.id.returnBtn)
+        val btnPlayers = findViewById<Button>(R.id.btnPlayers)
         val exitBtn = findViewById<Button>(R.id.exitBtn)
 
         guessBtn.setOnClickListener {
@@ -42,6 +43,12 @@ class Studybreak : AppCompatActivity() {
             guessNumber?.text?.clear()
             generateRandomNumber()
             outputTxt?.text = ""
+        }
+
+        btnPlayers.setOnClickListener{
+            val intent = Intent(this, BestPlayers::class.java)
+            startActivity(intent)
+            Toast.makeText(this, "Welcome to Player Rankings!", Toast.LENGTH_LONG).show()
         }
 
         exitBtn.setOnClickListener {

@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val txtAppGreetings = findViewById<TextView>(R.id.txtAppGreetings)
         val txtAppDescription = findViewById<TextView>(R.id.txtAppInfo)
         val btnQuiz = findViewById<Button>(R.id.btnQuiz)
-        //val btnQuizzes = findViewById<Button>(R.id.btnQuizzes)
+        val btnBestPlayers = findViewById<Button>(R.id.btnBestPlayers)
         val btnStudyBreak = findViewById<Button>(R.id.btnStudyBreak)
         val btnExit = findViewById<Button>(R.id.btnExit)
 
@@ -36,7 +36,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             Toast.makeText(this, "Once you start the quiz you cannot exit until it is completed.", Toast.LENGTH_LONG).show()//
         }
-
+        btnBestPlayers.setOnClickListener{
+            val intent = Intent(this, BestPlayers::class.java)
+            startActivity(intent)
+            Toast.makeText(this, "Welcome to Player Rankings!", Toast.LENGTH_LONG).show()
+        }
         btnStudyBreak.setOnClickListener{
             val intent = Intent(this, Studybreak::class.java)
             startActivity(intent)
