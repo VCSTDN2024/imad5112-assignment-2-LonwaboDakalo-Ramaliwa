@@ -40,7 +40,7 @@ class MainScore : AppCompatActivity() {
 
 
         btnReview.setOnClickListener {
-            val intent = Intent(this, MainReview::class.java)
+            val intent = Intent(this, Review::class.java)
             intent.putExtra("questions", MainQuiz.questions)
             intent.putExtra("answers", MainQuiz.answers)
             startActivity(intent)
@@ -55,8 +55,4 @@ class MainScore : AppCompatActivity() {
 
     }
 
-    // private fun <T> findViewById(txtScore: T): T {
-
-       // return TODO("Provide the return value")
-    //}
 }
